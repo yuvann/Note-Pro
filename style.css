@@ -1,0 +1,226 @@
+body{
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color:#2cbbfd ;
+     background: url("writing_cover.jpg") no-repeat center center fixed;
+     background-size: cover;
+}
+ #header{
+     width: 100%;
+     padding: 10px 40px;
+     box-sizing:border-box;
+     background-color: white;
+     color: #2cbbfd;
+     font-size: 25px;
+     vertical-align: text-top;
+     max-height: 50px;
+     box-sizing: border-box;
+     opacity: 0.95;
+}
+ .small_top{
+     font-size: 10px;
+     vertical-align: text-top;
+}
+ .float_bar{
+     float: right;
+     width:170px;
+     display: flex;
+     min-height: 29px;
+     box-sizing: border-box;
+     cursor: pointer;
+     display: none;
+}
+ .float_bar div{
+     color: #2cbbfd;
+     width: 85px;
+     text-align: center;
+     font-size: 14px;
+     min-height: 29px;
+     padding-top:7px;
+     box-sizing: border-box;
+     font-weight: bolder;
+     transition: 0.2s ease-in;
+}
+ .float_bar div:hover{
+     transform: scale(1.15,1.12);
+}
+ .model {
+     display: none;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     background-color: #ffffff3d;
+     padding: 25px 30px 30px 20px;
+     text-align: center;
+     width: 400px;
+     box-sizing: border-box;
+     font-size: 16px;
+     border-radius: 5px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+}
+ input {
+     width: 300px;
+     padding: 10px 5px;
+     margin: 6px 5px;
+     border: 1px solid #0000003d;
+     border-radius: 3px;
+     background-color: #ffffffc4;
+     box-sizing: border-box;
+}
+ .model span {
+     position:absolute;
+     top:0;
+     color: #334b4b;
+     font-size: 18px;
+     right: 0;
+     margin:10px 15px 0 0;
+     cursor: pointer;
+}
+ .model button {
+     background-color: #4CAF50;
+     text-align: center;
+     width: 100px;
+     border:none;
+     border-radius: 3px;
+     margin:10px 0 0 0;
+     padding:10px;
+     color: white;
+     cursor: pointer;
+}
+ ::placeholder{
+     color: #897e6d;
+}
+ .info{
+     font-size: 26px;
+     color: #f2f2f2;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     display: none;
+     transform: translate(-50%,-50%);
+}
+ #dashboard{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     align-items: baseline;
+}
+ .tabs{    
+     margin-top:25px;
+     background-color: #ffffff50;
+     box-sizing: border-box;
+}
+.tab_child{
+ 	width: 400px;
+ 	min-height: 100px;
+ 	box-sizing: border-box;
+}
+ .note_input{
+ 	display: none;
+ 	flex-direction: row;
+ 	background-color:none;
+  	flex-wrap: wrap;
+ 	justify-content: center;
+ 	align-items: center;
+ 	padding:12px 0px;
+ 	background: linear-gradient(to right , #d0ccacbd, #ffffff9e);
+}
+ .note_input div{
+ 	display: inline-block;
+	 }
+ .tag_holder{
+	 	display: inline-block;
+	 	margin:10px;
+	 }
+ .tag_holder div {
+ 	display: inline-block;
+ 	color: white;
+ 	font-weight: bolder;
+	padding: 8px 18px;
+	margin: 0px 5px;
+ 	font-size: 14px;
+ 	width: 80px;
+ 	text-align: center;
+ 	transition: 0.3s ease-in;
+ }
+ .tag_holder div:hover {
+     transform: scale(1.15,1.12);
+     cursor: pointer;
+ }
+ textarea{
+     width: 400px;
+     border: 1px solid #ffffff;
+     border-radius: 3px;
+     height: 60px;
+     background-color: #ffffff;
+     padding: 10px;
+     box-sizing: border-box;
+}
+  
+#add_note , #bin{
+	cursor: pointer;
+	background-color:#2cbbfd;
+	color: white;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding-top: 10px;
+ 	font-size: 28px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	display: block;
+}
+#bin{
+	margin-right: 95px;
+	padding-top: 13px;
+ 	font-size: 14px;
+	display: none;
+	background: #ffffff;
+ }
+
+#add_note:hover  {
+	transition: 0.5s ease-in;
+	transform: rotate(360deg);
+}
+
+.tab_header{
+	width: inherit;
+	padding: 10px;
+	background-color: white;
+	color: #2cbbfd;
+	box-sizing: border-box;
+	font-weight: bold;
+	font-size: 15px;
+}
+.tab_header span{
+	float: right;
+}
+.notes {
+	width: 380px;
+	margin: 10px;
+	box-sizing: border-box;
+	padding: 10px;
+ 	color: #6f6e6d;
+	background-color: white;
+	letter-spacing: 1px;
+	line-height: 25px;
+	overflow: hidden;
+}
+.todo_holder{
+	border-right:3px solid #ff6a00;
+}
+.inprogress_holder{
+	border-right:3px solid #0976d4;
+}
+.completed_holder{
+	border-right:3px solid #0fa251;
+}

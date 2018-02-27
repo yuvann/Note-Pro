@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+   <head>	
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      	<link   rel="stylesheet" type="text/css" href="./style.css"> </link>
+       	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      	<script async type="text/javascript" src="./script.js"> </script>
+   	</head>
+   	<body>
+	    <div id="header">
+	    	Note <span class="small_top">PRO</span>
+	    	<div class="float_bar">
+	    		<div  id='login'>LOGIN</div>
+	    		<div  id='signup'>SIGN UP</div>
+	    	</div> 
+			<div  class="model">
+				<span>x</span><br/>
+				<input type="email" name="email" id="email_input" autocomplete="off" placeholder="Email" autofocus>
+				<input type="text" name="username" autocomplete="off" placeholder="Username" autofocus>
+				<input type="Password" name="Password" autocomplete="off" placeholder="Password">
+				<button>SIGN UP</button>
+			</div>   
+		</div>   
+		<div class="content">
+			<div class="info">
+				Save your Notes and Manage easily by Drag and Drop <br/><br/>
+				Get Started !!
+			</div>
+			<div>
+				
+				<div class="note_input">
+					<div  ><textarea id="add_todo_input" placeholder="Write a Note"></textarea></div>
+					<div class="tag_holder">
+ 						 <div  style="background-color: #ff6a00;">To Do</div>
+						 <div  style="background-color: #0976d4;">In Progress</div>
+						 <div  style="background-color: #0fa251;">Completed</div>
+					</div>
+				</div>
+				<div id="dashboard">	
+					<div class="tabs">
+						<div class="tab_header" style="color: #ff6a00"> To Do <span id="todo_count" >0</span></div>
+						<div class="tab_child" id="notes_todo" >
+							 
+						</div>
+					</div>
+					<div class="tabs">
+						<div class="tab_header" style="color: #0976d4"> In Progress <span id="inprogress_count" >0</span></div>	
+						<div class="tab_child" id="notes_inprogress" >
+							 
+						</div>					
+					</div>
+					<div class="tabs">
+						<div class="tab_header" style="color: #0fa251"> Completed <span id="completed_count" >0</span></div>		
+						<div class="tab_child" id="notes_completed" >
+							 
+						</div>				
+					</div>
+	 			</div>
+	 		</div>
+		</div>
+		<div id="add_note"> <span>+</span> </div>
+		<div id="bin" > <img src="./bin.svg" width="24" height="24" /> </div>
+	</body>
+</html>
